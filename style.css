@@ -109,3 +109,359 @@ header nav a:nth-child(2n-1) {
     text-transform: uppercase;
     margin: 1rem;
 }
+
+.button:hover {
+    background: var(--color-secondary);
+}
+
+.button-fot:hover {
+    background: var(--color-secondary);
+}
+
+nav a:hover {
+    color: var(--color-primary)
+}
+
+/* MAIN */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+    padding-bottom: 16rem;
+}
+
+.cont-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-hero {
+    max-width: 100%;
+    display: block;
+}
+
+.text-title {
+    margin: 1rem 0 1.5rem 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.paragraph {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero-section .button {
+    position: relative;
+}
+
+.hero-section .button::after {
+    content: '';
+    background: url("/images/arrow-curve.svg");
+    position: absolute;
+    top: 5rem;
+    height: 48px;
+    width: 132px;
+}
+
+.decoration {
+    display: block;
+    position: relatve;
+}
+
+.decoration::after {
+    content: '';
+    background: url("/images/three-dashes.svg");
+    position: absolute;
+    height: 36px;
+    width: 40px;
+}
+
+/* COURSES MAIN */
+
+.contain-cards {
+    margin-top: -8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.course-box {
+    display: grid;
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    max-width: 17rem;
+    background: var(--color-primary);
+    margin: 1rem;
+    padding: 1rem 0 0 1rem;
+}
+
+strong {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.course-box:nth-child(2n) {
+    align-self: end;
+    background: var(--color-secondary);
+}
+
+.paragraph-box {
+    font-size: 1rem;
+}
+
+.title-box {
+    font-size: 1.5rem;
+}
+
+.image-box {
+    width: 3rem;
+    height: 3rem;
+}
+
+.image-arrow-right {
+    margin-top: 3rem;
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    justify-self:end;
+    margin-right: 0;
+}
+
+.box-end-courses {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+
+.text {
+    font-size: 2.5rem;
+    margin: 2rem 0 0.5rem 0;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 1rem;
+}
+
+
+.logo-fot {
+    margin: 1rem auto;
+
+}
+
+.foot-p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+}
+
+
+footer nav a {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.form-fot {
+    margin-top: 1.5rem;
+}
+
+label {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+input {
+    margin-top: 1rem;
+    background: var(--color-white);
+    width: 17rem;
+    height: 2.5rem;
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+}
+
+.button-fot {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    display: block;
+    font-size: 1.25rem;
+    padding: .5rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media screen and (min-width: 40rem){
+ 
+.head {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-itens {
+    display: block;
+}
+
+.logo {
+    position: relative;
+    justify-self: start;
+    margin-left: 1rem;
+}
+
+.contain-cards {
+    margin-top: -8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+@media screen and (min-width: 40rem) {
+
+    .hero-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .cont-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .image-hero {
+        justify-self: flex-end;
+        max-width: 40rem;
+    }
+
+    .text-title {
+        margin-top: 1rem;
+        text-align: start;
+        line-height: 2.6rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .paragraph {
+        text-align: start;
+        padding-left: 1.3rem;
+    }
+
+/* DEIXAR O BOTAO DE LADO E CONTINUAR COM AS OUTRAS SEÇÕES*/
+    
+    .hero-section .cont-main .button {
+        position: relative;
+        left: -2.375rem;;
+        padding: .5rem 1rem;
+        margin: 0;
+    }
+
+    .hero-section .button::after {
+        position: absolute;
+        top: 4rem;
+        left: 8rem;
+    }
+
+/* COURSES SECTION */
+    
+
+    
+    .contain-cards {
+        display: flex;
+    }
+
+    .course-box {
+        align-self: start;
+        margin: 0 1rem 1rem 1rem;
+        padding-right: 0.5rem;
+    }
+
+
+    .course-box:nth-child(2n) {
+        align-self: end;
+        background: var(--color-secondary);
+        margin: 1.1rem 1.1rem 0 1.1rem;
+        
+    }
+
+    .image-arrow-right {
+        margin-top: 1.5rem;
+    }
+
+    /* RODAPÉ */
+    
+    footer {
+        display: flex;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+
+    .div-1-fot,
+    .div-2-fot,
+    .div-3-fot {
+        padding: 1rem;
+    }
+
+    .div-1-fot {
+        padding: 1rem;
+        max-width: 15rem;
+        margin-right: 2rem;
+    }
+    
+    .div-2-fot {
+        display: flex;
+        margin: 0 1rem 0 0;
+        justify-items: center;
+    }
+/*
+    .div-3-fot {
+        display: flex;
+    }
+*/
+    footer div nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo-fot {
+        grid-column: 1/3;
+        margin: 1rem auto;
+    }
+
+    .form-fot {
+        margin-top: 1rem;
+    }
+
+    label {
+        font-size: 1.25rem;
+    }
+    
+    input {
+        margin-top: 1rem;
+        width:32rem;
+        height: 2.8rem;
+        border: 2px solid var(--color-black);
+        box-shadow: 4px 4px 0 var(--color-black);
+    }
+}
+}
